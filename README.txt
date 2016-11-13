@@ -1,4 +1,5 @@
 # Monster
+
 Sylvain / Alexis
 Projet Monster IUT Gradignan
 
@@ -20,7 +21,7 @@ $ git pull
 Pour mettre à jours SUR LE SERVEUR après avoir fait des modifications:
 
 - ATTENTION A BIEN ETRE DANS LE BON DOSSIER 
-- TOUTS FICHERS SUPPRIMER SUR LE LOCAL SUPPRIMERA LES FICHIERS DU SERVEURS SI VOUS FAITES LA MANIP JUSTE EN DESSOUS 
+- TOUTS FICHERS SUPPRIMER EN LOCAL SUPPRIMERA LES FICHIERS DU SERVEURS SI VOUS FAITES LA MANIP JUSTE EN DESSOUS 
 
 $ git add --all
 $ git commit -m "description des changements faits"
