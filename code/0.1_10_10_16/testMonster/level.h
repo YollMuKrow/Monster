@@ -20,5 +20,5 @@ struct Level
 void initLevel(Level & lvl);
 
 
-void showMonsterLvl(Level l);
+void showMonsterLvl(Level l, SDL_Surface *&screen);
 #endif // LEVEL_H

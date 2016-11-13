@@ -8,15 +8,16 @@ void initLevel(Level & lvl)
    //initialisation du nombre de monstres du niveau
    lvl.nbMonster = 3;
 
-   //initialisation du premier monstre de ce niveau (il y en a plusieurs (lvl.nbMonster) à faire)
-   initMonster( lvl.tabMonster[0]);
-   initMonster( lvl.tabMonster[1]);
-   initMonster( lvl.tabMonster[2]);
+   //initialisation des monstres de ce niveau
+   for(int i=0;i<lvl.nbMonster;i++){
+   initMonster( lvl.tabMonster[i]);
 }
-void showMonsterLvl(Level l){
+}
+void showMonsterLvl(Level l,SDL_Surface* &screen){
 
     for(int i=0;i<l.nbMonster;i++){
-        apply_Surface(0,0,l.tabMonster[i].imMonster,screen,l.tabMonster[i].rectMonster);
-        SDL_FreeSurface(l.tabMonster[i].imMonster);
+        SDL_Surface*sprite=loadImageWithColorKey("sprite.bmp",255,255,255);
+        apply_Surface(0,0,sprite,screen,&l.tabMonster[i].rectMonster);
+        SDL_FreeSurface(sprite);
     }
 }

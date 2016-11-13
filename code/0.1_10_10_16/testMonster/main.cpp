@@ -13,13 +13,16 @@ int main(){
   screen=SDL_SetVideoMode(SCREEN_WIDTH,SCREEN_HEIGHT,
                           SCREEN_BPP,SDL_SWSURFACE);
   SDL_Event event;
-  SDL_Surface*titre=loadImage("Fond.bmp");
+  SDL_Surface*titre=loadImage("background.bmp");
+  Level l;
 
   apply_Surface(0,0,titre,screen,NULL);
   SDL_Flip(screen);
   while(!quit){
 
-
+      initLevel(l);
+      showMonsterLvl(l,screen);
+      SDL_Flip(screen);
 
       while(SDL_PollEvent(&event))
         if(event.type==SDL_QUIT)

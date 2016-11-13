@@ -18,9 +18,8 @@ struct Monster
     EnumMonster typeMonster;
     int x;
     int y;
-    SDL_Surface *imMonster;
+    //SDL_Surface *imMonster;
     SDL_Rect rectMonster;
-
 };
 
 //Définitions des prototypes de fonctions
