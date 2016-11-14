@@ -5,6 +5,7 @@ const int SCREEN_WIDTH=320; // longueur de l'écran
 const int SCREEN_HEIGHT=568; // largeur de l'écran
 const int SCREEN_BPP=32; // BPP de l'écran
 
+
 int main(){
   bool quit=false;
 
