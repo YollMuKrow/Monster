@@ -16,12 +16,15 @@ int main(){
   SDL_Event event;
   SDL_Surface*titre=loadImage("background.bmp");
   Level l;
+  initLevel(l);
 
   apply_Surface(0,0,titre,screen,NULL);
   SDL_Flip(screen);
+
   while(!quit){
 
-      initLevel(l);
+      //remplirBoard(l);
+      afficherBoard(l);
       showMonsterLvl(l,screen);
       SDL_Flip(screen);
 

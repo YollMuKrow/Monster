@@ -18,7 +18,7 @@ void initMonster(Monster & m)
       m.rectMonster.h=64.5;
       break;
     }
-  m.x=2;
-  m.y=4;
+  m.x=3;//3;
+  m.y=0;//6;
 }
 
