@@ -13,6 +13,7 @@ $ git clone https://github.com/YollMuKrow/Monster.git
 
 
 Pour mettre à jour les fichiers(en local):
+- ATTENTION A BIEN ETRE DANS LE BON DOSSIER (apres avoir fait git clone il faut "avancer" d'un dossier)
 on se place dans le bon fichier depuis le terminal puis:
 
 $ git pull
