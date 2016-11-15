@@ -22,14 +22,6 @@ void initLevel(Level & lvl)
 
 void remplirBoard(Level & lvl){
   // Remplissage des Monsters
-//  for(int x=0;x<BOARD_X;x++){
-//      for(int y=0;y<BOARD_Y;y++){
-//          cout << lvl.b[x][y];
-//        }
-//      cout << endl;
-//    }
-//  cout << endl;
-//  SDL_Delay(5000);
     for(int i=0;i<lvl.nbMonster;i++){
       switch(lvl.tabMonster[i].typeMonster){
         case STANDARD:
