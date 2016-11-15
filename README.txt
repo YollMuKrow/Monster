@@ -1,7 +1,4 @@
-# Monster
 
-Sylvain / Alexis
-Projet Monster IUT Gradignan
 
 on installe git si ce n'est pas déjà fait: $ sudo apt-get install git
 
