@@ -23,7 +23,8 @@ int main(){
 
   while(!quit){
 
-      //remplirBoard(l);
+      afficherBoard(l);
+      remplirBoard(l);
       afficherBoard(l);
       showMonsterLvl(l,screen);
       SDL_Flip(screen);

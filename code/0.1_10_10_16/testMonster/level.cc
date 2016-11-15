@@ -12,7 +12,7 @@ void initBoard(Level & lvl){
 void initLevel(Level & lvl)
 {
   //initialisation du nombre de monstres du niveau
-  lvl.nbMonster = 3;
+  lvl.nbMonster = 1;
   initBoard(lvl);
   //initialisation des monstres de ce niveau
   for(int i=0;i<lvl.nbMonster;i++){
@@ -22,7 +22,15 @@ void initLevel(Level & lvl)
 
 void remplirBoard(Level & lvl){
   // Remplissage des Monsters
-  for(int i=0;i<lvl.nbMonster;i++){
+//  for(int x=0;x<BOARD_X;x++){
+//      for(int y=0;y<BOARD_Y;y++){
+//          cout << lvl.b[x][y];
+//        }
+//      cout << endl;
+//    }
+//  cout << endl;
+//  SDL_Delay(5000);
+    for(int i=0;i<lvl.nbMonster;i++){
       switch(lvl.tabMonster[i].typeMonster){
         case STANDARD:
           lvl.b[lvl.tabMonster[i].x][lvl.tabMonster[i].y]=1;
@@ -38,7 +46,7 @@ void remplirBoard(Level & lvl){
 void afficherBoard(Level lvl){
   for(int x=0;x<BOARD_X;x++){
       for(int y=0;y<BOARD_Y;y++){
-          cout << "board de" << x << " et " << y << " : " << lvl.b[x][y] << endl;;
+          cout << "board de " << x << " et " << y << " : " << lvl.b[x][y] << endl;
         }
     }
 }
